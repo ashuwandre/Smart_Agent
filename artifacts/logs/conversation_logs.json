@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "requests": [
+    {
+      "timestamp": "2026-07-22T17:25:04.148189Z",
+      "conversation_id": "live-tier1-billing",
+      "customer": "CUST0003",
+      "request": "What is included in my plan and why is my monthly bill 599?",
+      "response": null,
+      "route": null,
+      "status": "error",
+      "confidence": null,
+      "latency": 22853.096,
+      "guardrail_decision": null,
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T17:27:32.176374Z",
+      "conversation_id": "live-quota-fallback",
+      "customer": "CUST0003",
+      "request": "What is included in my plan and why is my monthly bill 599?",
+      "response": "I cannot process this request automatically right now. Please route it to human support.",
+      "route": null,
+      "status": "error",
+      "confidence": 1.0,
+      "latency": 20070.041,
+      "guardrail_decision": "allow",
+      "error": "Planner unavailable: RateLimitError.",
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T17:29:09.338033Z",
+      "conversation_id": "offline-submission-check",
+      "customer": "CUST0003",
+      "request": "Why is my bill higher this month?",
+      "response": "The billing handler received the request. No customer action was executed in offline mock mode.",
+      "route": "billing",
+      "status": "completed",
+      "confidence": 1.0,
+      "latency": 30.157,
+      "guardrail_decision": "allow",
+      "error": null,
+      "circuit_breakers": {}
+    }
+  ]
+}

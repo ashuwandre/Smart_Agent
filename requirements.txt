@@ -1,0 +1,9 @@
+faiss-cpu==1.14.3
+langgraph==1.2.9
+openai==2.46.0
+pandas==3.0.3
+pydantic==2.13.4
+python-dotenv==1.2.2
+pytest==9.1.1
+reportlab==5.0.0
+streamlit==1.60.0

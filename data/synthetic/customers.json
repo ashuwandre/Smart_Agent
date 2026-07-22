@@ -1,0 +1,4524 @@
+[
+  {
+    "customer_id": "CUST0001",
+    "name": "Pranav Zaveri",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 52,
+    "region": "East",
+    "email": "pranav.zaveri.1@example.com",
+    "phone": "+91-68847-47153",
+    "churn_risk_score": 0.06,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0002",
+    "name": "Pooja Sharma",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 81,
+    "region": "Northeast",
+    "email": "pooja.sharma.2@example.com",
+    "phone": "+91-86581-80954",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0003",
+    "name": "Meera Patel",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 26,
+    "region": "Northeast",
+    "email": "meera.patel.3@example.com",
+    "phone": "+91-84021-46681",
+    "churn_risk_score": 0.18,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0004",
+    "name": "Aditi Verma",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 80,
+    "region": "Northeast",
+    "email": "aditi.verma.4@example.com",
+    "phone": "+91-90309-93509",
+    "churn_risk_score": 0.21,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0005",
+    "name": "Riya Mehta",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 49,
+    "region": "Central",
+    "email": "riya.mehta.5@example.com",
+    "phone": "+91-76446-44321",
+    "churn_risk_score": 0.19,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0006",
+    "name": "Aditi Bansal",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 18,
+    "region": "East",
+    "email": "aditi.bansal.6@example.com",
+    "phone": "+91-82354-35048",
+    "churn_risk_score": 0.22,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console",
+      "usage_analytics"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0007",
+    "name": "Varun Desai",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 65,
+    "region": "Northeast",
+    "email": "varun.desai.7@example.com",
+    "phone": "+91-75112-45913",
+    "churn_risk_score": 0.31,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0008",
+    "name": "Kabir Wandre",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 56,
+    "region": "Northeast",
+    "email": "kabir.wandre.8@example.com",
+    "phone": "+91-70567-69984",
+    "churn_risk_score": 0.14,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0009",
+    "name": "Riya Patel",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 23,
+    "region": "South",
+    "email": "riya.patel.9@example.com",
+    "phone": "+91-91796-88093",
+    "churn_risk_score": 0.03,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0010",
+    "name": "Rahul Desai",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 84,
+    "region": "East",
+    "email": "rahul.desai.10@example.com",
+    "phone": "+91-68565-59672",
+    "churn_risk_score": 0.42,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0011",
+    "name": "Ishita Sharma",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 72,
+    "region": "East",
+    "email": "ishita.sharma.11@example.com",
+    "phone": "+91-83818-95847",
+    "churn_risk_score": 0.37,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0012",
+    "name": "Kiran Patel",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 43,
+    "region": "South",
+    "email": "kiran.patel.12@example.com",
+    "phone": "+91-76497-53383",
+    "churn_risk_score": 0.38,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0013",
+    "name": "Saanvi Chauhan",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 50,
+    "region": "South",
+    "email": "saanvi.chauhan.13@example.com",
+    "phone": "+91-79337-60550",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0014",
+    "name": "Ananya Verma",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 18,
+    "region": "South",
+    "email": "ananya.verma.14@example.com",
+    "phone": "+91-67724-95592",
+    "churn_risk_score": 0.29,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0015",
+    "name": "Farhan Sharma",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 60,
+    "region": "Northeast",
+    "email": "farhan.sharma.15@example.com",
+    "phone": "+91-68391-72050",
+    "churn_risk_score": 0.19,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0016",
+    "name": "Pranav Nair",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 82,
+    "region": "East",
+    "email": "pranav.nair.16@example.com",
+    "phone": "+91-79251-56836",
+    "churn_risk_score": 0.49,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0017",
+    "name": "Saanvi Khan",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 59,
+    "region": "Northeast",
+    "email": "saanvi.khan.17@example.com",
+    "phone": "+91-60489-44603",
+    "churn_risk_score": 0.02,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0018",
+    "name": "Tanvi Wandre",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 37,
+    "region": "Northeast",
+    "email": "tanvi.wandre.18@example.com",
+    "phone": "+91-97590-19879",
+    "churn_risk_score": 0.45,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0019",
+    "name": "Varun Verma",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 8,
+    "region": "South",
+    "email": "varun.verma.19@example.com",
+    "phone": "+91-71948-98717",
+    "churn_risk_score": 0.09,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0020",
+    "name": "Deepak Reddy",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 45,
+    "region": "East",
+    "email": "deepak.reddy.20@example.com",
+    "phone": "+91-93179-75627",
+    "churn_risk_score": 0.16,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0021",
+    "name": "Vikram Kulkarni",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 79,
+    "region": "Central",
+    "email": "vikram.kulkarni.21@example.com",
+    "phone": "+91-73601-84322",
+    "churn_risk_score": 0.42,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0022",
+    "name": "Sameer Patel",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 28,
+    "region": "Northeast",
+    "email": "sameer.patel.22@example.com",
+    "phone": "+91-70684-21977",
+    "churn_risk_score": 0.06,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0023",
+    "name": "Farhan Khan",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 65,
+    "region": "West",
+    "email": "farhan.khan.23@example.com",
+    "phone": "+91-68101-14396",
+    "churn_risk_score": 0.11,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0024",
+    "name": "Kavya Desai",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 72,
+    "region": "West",
+    "email": "kavya.desai.24@example.com",
+    "phone": "+91-98925-53321",
+    "churn_risk_score": 0.62,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0025",
+    "name": "Pooja Verma",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 67,
+    "region": "Central",
+    "email": "pooja.verma.25@example.com",
+    "phone": "+91-85155-88255",
+    "churn_risk_score": 0.41,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0026",
+    "name": "Nikhil Sharma",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 72,
+    "region": "South",
+    "email": "nikhil.sharma.26@example.com",
+    "phone": "+91-68215-33982",
+    "churn_risk_score": 0.07,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0027",
+    "name": "Bhavna Reddy",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 47,
+    "region": "East",
+    "email": "bhavna.reddy.27@example.com",
+    "phone": "+91-88052-92394",
+    "churn_risk_score": 0.32,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0028",
+    "name": "Meera Rao",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 44,
+    "region": "Northeast",
+    "email": "meera.rao.28@example.com",
+    "phone": "+91-94043-22748",
+    "churn_risk_score": 0.47,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0029",
+    "name": "Rahul Chauhan",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 52,
+    "region": "East",
+    "email": "rahul.chauhan.29@example.com",
+    "phone": "+91-83410-56895",
+    "churn_risk_score": 0.12,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0030",
+    "name": "Kiran Mehta",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 43,
+    "region": "South",
+    "email": "kiran.mehta.30@example.com",
+    "phone": "+91-72753-55155",
+    "churn_risk_score": 0.4,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0031",
+    "name": "Arjun Kulkarni",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 15,
+    "region": "East",
+    "email": "arjun.kulkarni.31@example.com",
+    "phone": "+91-91581-95708",
+    "churn_risk_score": 0.39,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0032",
+    "name": "Ishita Menon",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 10,
+    "region": "Central",
+    "email": "ishita.menon.32@example.com",
+    "phone": "+91-98367-81739",
+    "churn_risk_score": 0.46,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0033",
+    "name": "Priya Kapoor",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 48,
+    "region": "West",
+    "email": "priya.kapoor.33@example.com",
+    "phone": "+91-88161-90294",
+    "churn_risk_score": 0.33,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0034",
+    "name": "Tanvi Desai",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 46,
+    "region": "North",
+    "email": "tanvi.desai.34@example.com",
+    "phone": "+91-86738-10849",
+    "churn_risk_score": 0.2,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0035",
+    "name": "Kavya Menon",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 80,
+    "region": "West",
+    "email": "kavya.menon.35@example.com",
+    "phone": "+91-91122-20845",
+    "churn_risk_score": 0.26,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0036",
+    "name": "Deepak Verma",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 13,
+    "region": "Central",
+    "email": "deepak.verma.36@example.com",
+    "phone": "+91-77508-46116",
+    "churn_risk_score": 0.08,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0037",
+    "name": "Priya Mehta",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 28,
+    "region": "West",
+    "email": "priya.mehta.37@example.com",
+    "phone": "+91-83815-12723",
+    "churn_risk_score": 0.2,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0038",
+    "name": "Shreya Jain",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 2,
+    "region": "West",
+    "email": "shreya.jain.38@example.com",
+    "phone": "+91-69174-39874",
+    "churn_risk_score": 0.11,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0039",
+    "name": "Riya Kulkarni",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 80,
+    "region": "Central",
+    "email": "riya.kulkarni.39@example.com",
+    "phone": "+91-85153-19998",
+    "churn_risk_score": 0.29,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0040",
+    "name": "Rohan Joshi",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 22,
+    "region": "West",
+    "email": "rohan.joshi.40@example.com",
+    "phone": "+91-88800-77584",
+    "churn_risk_score": 0.28,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0041",
+    "name": "Nikhil Gupta",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 31,
+    "region": "Northeast",
+    "email": "nikhil.gupta.41@example.com",
+    "phone": "+91-96554-30327",
+    "churn_risk_score": 0.12,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0042",
+    "name": "Riya Nair",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 15,
+    "region": "West",
+    "email": "riya.nair.42@example.com",
+    "phone": "+91-97038-64781",
+    "churn_risk_score": 0.99,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [],
+    "account_status": "suspended"
+  },
+  {
+    "customer_id": "CUST0043",
+    "name": "Gaurav Saxena",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 4,
+    "region": "Central",
+    "email": "gaurav.saxena.43@example.com",
+    "phone": "+91-75465-22685",
+    "churn_risk_score": 0.09,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0044",
+    "name": "Pooja Kapoor",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 48,
+    "region": "Northeast",
+    "email": "pooja.kapoor.44@example.com",
+    "phone": "+91-93361-17950",
+    "churn_risk_score": 0.28,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0045",
+    "name": "Tanvi Bansal",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 60,
+    "region": "West",
+    "email": "tanvi.bansal.45@example.com",
+    "phone": "+91-81564-86371",
+    "churn_risk_score": 0.48,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0046",
+    "name": "Saanvi Verma",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 32,
+    "region": "West",
+    "email": "saanvi.verma.46@example.com",
+    "phone": "+91-73559-46002",
+    "churn_risk_score": 0.29,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0047",
+    "name": "Sanjay Zaveri",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 72,
+    "region": "North",
+    "email": "sanjay.zaveri.47@example.com",
+    "phone": "+91-95439-61166",
+    "churn_risk_score": 0.14,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0048",
+    "name": "Kabir Joshi",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 72,
+    "region": "Northeast",
+    "email": "kabir.joshi.48@example.com",
+    "phone": "+91-85852-32522",
+    "churn_risk_score": 0.58,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0049",
+    "name": "Kiran Desai",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 32,
+    "region": "Northeast",
+    "email": "kiran.desai.49@example.com",
+    "phone": "+91-94904-48402",
+    "churn_risk_score": 0.52,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0050",
+    "name": "Varun Patel",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 7,
+    "region": "North",
+    "email": "varun.patel.50@example.com",
+    "phone": "+91-88140-36700",
+    "churn_risk_score": 0.7,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console",
+      "usage_analytics"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0051",
+    "name": "Tanvi Reddy",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 23,
+    "region": "North",
+    "email": "tanvi.reddy.51@example.com",
+    "phone": "+91-99451-54220",
+    "churn_risk_score": 0.2,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0052",
+    "name": "Rahul Nair",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 52,
+    "region": "Central",
+    "email": "rahul.nair.52@example.com",
+    "phone": "+91-92218-30927",
+    "churn_risk_score": 0.88,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [],
+    "account_status": "suspended"
+  },
+  {
+    "customer_id": "CUST0053",
+    "name": "Aarav Patel",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 26,
+    "region": "South",
+    "email": "aarav.patel.53@example.com",
+    "phone": "+91-63721-57955",
+    "churn_risk_score": 0.17,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0054",
+    "name": "Saanvi Reddy",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 79,
+    "region": "Central",
+    "email": "saanvi.reddy.54@example.com",
+    "phone": "+91-91149-31092",
+    "churn_risk_score": 0.26,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0055",
+    "name": "Nikhil Kapoor",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 61,
+    "region": "West",
+    "email": "nikhil.kapoor.55@example.com",
+    "phone": "+91-92177-57418",
+    "churn_risk_score": 0.45,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0056",
+    "name": "Divya Yadav",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 10,
+    "region": "Northeast",
+    "email": "divya.yadav.56@example.com",
+    "phone": "+91-68869-95069",
+    "churn_risk_score": 0.4,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0057",
+    "name": "Kabir Zaveri",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 53,
+    "region": "North",
+    "email": "kabir.zaveri.57@example.com",
+    "phone": "+91-82586-92068",
+    "churn_risk_score": 0.54,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0058",
+    "name": "Divya Kulkarni",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 56,
+    "region": "Northeast",
+    "email": "divya.kulkarni.58@example.com",
+    "phone": "+91-68751-43328",
+    "churn_risk_score": 0.72,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0059",
+    "name": "Ananya Desai",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 68,
+    "region": "East",
+    "email": "ananya.desai.59@example.com",
+    "phone": "+91-92816-76116",
+    "churn_risk_score": 0.37,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0060",
+    "name": "Rahul Kulkarni",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 78,
+    "region": "West",
+    "email": "rahul.kulkarni.60@example.com",
+    "phone": "+91-91417-83041",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0061",
+    "name": "Arjun Kapoor",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 80,
+    "region": "Central",
+    "email": "arjun.kapoor.61@example.com",
+    "phone": "+91-83845-29796",
+    "churn_risk_score": 0.07,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0062",
+    "name": "Sameer Yadav",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 40,
+    "region": "South",
+    "email": "sameer.yadav.62@example.com",
+    "phone": "+91-81611-67312",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0063",
+    "name": "Saanvi Zaveri",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 29,
+    "region": "East",
+    "email": "saanvi.zaveri.63@example.com",
+    "phone": "+91-85809-28889",
+    "churn_risk_score": 0.55,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0064",
+    "name": "Tanvi Mishra",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 30,
+    "region": "Central",
+    "email": "tanvi.mishra.64@example.com",
+    "phone": "+91-98603-45559",
+    "churn_risk_score": 0.11,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0065",
+    "name": "Riya Reddy",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 54,
+    "region": "West",
+    "email": "riya.reddy.65@example.com",
+    "phone": "+91-83924-32696",
+    "churn_risk_score": 0.13,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0066",
+    "name": "Pooja Gupta",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 52,
+    "region": "East",
+    "email": "pooja.gupta.66@example.com",
+    "phone": "+91-81485-14173",
+    "churn_risk_score": 0.09,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0067",
+    "name": "Rohan Sharma",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 63,
+    "region": "Northeast",
+    "email": "rohan.sharma.67@example.com",
+    "phone": "+91-68504-98421",
+    "churn_risk_score": 0.32,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0068",
+    "name": "Shreya Wandre",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 28,
+    "region": "Northeast",
+    "email": "shreya.wandre.68@example.com",
+    "phone": "+91-80127-24558",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0069",
+    "name": "Aditi Mishra",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 27,
+    "region": "South",
+    "email": "aditi.mishra.69@example.com",
+    "phone": "+91-79249-68555",
+    "churn_risk_score": 0.65,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0070",
+    "name": "Sanjay Shah",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 55,
+    "region": "East",
+    "email": "sanjay.shah.70@example.com",
+    "phone": "+91-67111-88182",
+    "churn_risk_score": 0.18,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0071",
+    "name": "Tanvi Rao",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 52,
+    "region": "East",
+    "email": "tanvi.rao.71@example.com",
+    "phone": "+91-73300-38717",
+    "churn_risk_score": 0.4,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0072",
+    "name": "Divya Khan",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 80,
+    "region": "East",
+    "email": "divya.khan.72@example.com",
+    "phone": "+91-88226-68868",
+    "churn_risk_score": 0.52,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0073",
+    "name": "Divya Gupta",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 35,
+    "region": "Central",
+    "email": "divya.gupta.73@example.com",
+    "phone": "+91-91403-15604",
+    "churn_risk_score": 0.3,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0074",
+    "name": "Sanjay Desai",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 19,
+    "region": "West",
+    "email": "sanjay.desai.74@example.com",
+    "phone": "+91-76035-91883",
+    "churn_risk_score": 0.11,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0075",
+    "name": "Shreya Patel",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 57,
+    "region": "South",
+    "email": "shreya.patel.75@example.com",
+    "phone": "+91-76727-82845",
+    "churn_risk_score": 0.55,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0076",
+    "name": "Shreya Singh",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 43,
+    "region": "North",
+    "email": "shreya.singh.76@example.com",
+    "phone": "+91-94990-45777",
+    "churn_risk_score": 0.48,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0077",
+    "name": "Farhan Iyer",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 57,
+    "region": "West",
+    "email": "farhan.iyer.77@example.com",
+    "phone": "+91-79551-53319",
+    "churn_risk_score": 0.29,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0078",
+    "name": "Ananya Singh",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 55,
+    "region": "West",
+    "email": "ananya.singh.78@example.com",
+    "phone": "+91-90326-91803",
+    "churn_risk_score": 0.24,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0079",
+    "name": "Deepak Wandre",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 51,
+    "region": "Central",
+    "email": "deepak.wandre.79@example.com",
+    "phone": "+91-73101-14263",
+    "churn_risk_score": 0.42,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0080",
+    "name": "Ishita Desai",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 63,
+    "region": "Central",
+    "email": "ishita.desai.80@example.com",
+    "phone": "+91-90730-63746",
+    "churn_risk_score": 0.39,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0081",
+    "name": "Bhavna Shah",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 57,
+    "region": "West",
+    "email": "bhavna.shah.81@example.com",
+    "phone": "+91-71971-90138",
+    "churn_risk_score": 0.27,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0082",
+    "name": "Aditi Reddy",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 17,
+    "region": "East",
+    "email": "aditi.reddy.82@example.com",
+    "phone": "+91-71800-77170",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0083",
+    "name": "Saanvi Mehta",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 41,
+    "region": "West",
+    "email": "saanvi.mehta.83@example.com",
+    "phone": "+91-74825-75615",
+    "churn_risk_score": 0.41,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0084",
+    "name": "Sneha Patel",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 74,
+    "region": "Northeast",
+    "email": "sneha.patel.84@example.com",
+    "phone": "+91-81261-34890",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0085",
+    "name": "Vikram Desai",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 29,
+    "region": "North",
+    "email": "vikram.desai.85@example.com",
+    "phone": "+91-92579-83655",
+    "churn_risk_score": 0.32,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0086",
+    "name": "Vikram Jain",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 57,
+    "region": "South",
+    "email": "vikram.jain.86@example.com",
+    "phone": "+91-88854-47308",
+    "churn_risk_score": 0.23,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0087",
+    "name": "Nikhil Yadav",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 31,
+    "region": "North",
+    "email": "nikhil.yadav.87@example.com",
+    "phone": "+91-91827-82349",
+    "churn_risk_score": 0.1,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0088",
+    "name": "Kavya Mishra",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 84,
+    "region": "South",
+    "email": "kavya.mishra.88@example.com",
+    "phone": "+91-95692-94515",
+    "churn_risk_score": 0.42,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0089",
+    "name": "Shreya Chauhan",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 83,
+    "region": "Central",
+    "email": "shreya.chauhan.89@example.com",
+    "phone": "+91-76609-57757",
+    "churn_risk_score": 0.32,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0090",
+    "name": "Kiran Zaveri",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 15,
+    "region": "East",
+    "email": "kiran.zaveri.90@example.com",
+    "phone": "+91-88635-57109",
+    "churn_risk_score": 0.75,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0091",
+    "name": "Ishita Chauhan",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 72,
+    "region": "South",
+    "email": "ishita.chauhan.91@example.com",
+    "phone": "+91-65200-43124",
+    "churn_risk_score": 0.22,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0092",
+    "name": "Saanvi Mishra",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 30,
+    "region": "East",
+    "email": "saanvi.mishra.92@example.com",
+    "phone": "+91-68256-24314",
+    "churn_risk_score": 0.48,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0093",
+    "name": "Sneha Desai",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 8,
+    "region": "North",
+    "email": "sneha.desai.93@example.com",
+    "phone": "+91-85936-75423",
+    "churn_risk_score": 0.42,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0094",
+    "name": "Sneha Bansal",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 49,
+    "region": "East",
+    "email": "sneha.bansal.94@example.com",
+    "phone": "+91-69189-20861",
+    "churn_risk_score": 0.1,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0095",
+    "name": "Ananya Joshi",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 43,
+    "region": "North",
+    "email": "ananya.joshi.95@example.com",
+    "phone": "+91-99294-51533",
+    "churn_risk_score": 0.2,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0096",
+    "name": "Pranav Gupta",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 69,
+    "region": "North",
+    "email": "pranav.gupta.96@example.com",
+    "phone": "+91-62496-51119",
+    "churn_risk_score": 0.14,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0097",
+    "name": "Saanvi Jain",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 42,
+    "region": "North",
+    "email": "saanvi.jain.97@example.com",
+    "phone": "+91-67807-41228",
+    "churn_risk_score": 0.11,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0098",
+    "name": "Meera Reddy",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 34,
+    "region": "East",
+    "email": "meera.reddy.98@example.com",
+    "phone": "+91-94223-75711",
+    "churn_risk_score": 0.05,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console",
+      "usage_analytics"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0099",
+    "name": "Sanjay Khan",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 76,
+    "region": "West",
+    "email": "sanjay.khan.99@example.com",
+    "phone": "+91-85114-70829",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0100",
+    "name": "Akash Gupta",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 78,
+    "region": "North",
+    "email": "akash.gupta.100@example.com",
+    "phone": "+91-72301-10977",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0101",
+    "name": "Aditi Rao",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 64,
+    "region": "West",
+    "email": "aditi.rao.101@example.com",
+    "phone": "+91-97266-38463",
+    "churn_risk_score": 0.12,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0102",
+    "name": "Farhan Rao",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 47,
+    "region": "South",
+    "email": "farhan.rao.102@example.com",
+    "phone": "+91-61704-56392",
+    "churn_risk_score": 0.62,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0103",
+    "name": "Tanvi Iyer",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 66,
+    "region": "North",
+    "email": "tanvi.iyer.103@example.com",
+    "phone": "+91-90877-33440",
+    "churn_risk_score": 0.44,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0104",
+    "name": "Akash Shah",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 73,
+    "region": "East",
+    "email": "akash.shah.104@example.com",
+    "phone": "+91-95098-51091",
+    "churn_risk_score": 0.27,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0105",
+    "name": "Kabir Iyer",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 46,
+    "region": "Northeast",
+    "email": "kabir.iyer.105@example.com",
+    "phone": "+91-97410-29232",
+    "churn_risk_score": 0.53,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0106",
+    "name": "Saanvi Kapoor",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 12,
+    "region": "South",
+    "email": "saanvi.kapoor.106@example.com",
+    "phone": "+91-63153-12979",
+    "churn_risk_score": 0.42,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0107",
+    "name": "Kabir Singh",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 21,
+    "region": "East",
+    "email": "kabir.singh.107@example.com",
+    "phone": "+91-88662-90016",
+    "churn_risk_score": 0.06,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0108",
+    "name": "Farhan Mishra",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 5,
+    "region": "South",
+    "email": "farhan.mishra.108@example.com",
+    "phone": "+91-65424-96773",
+    "churn_risk_score": 0.1,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0109",
+    "name": "Aditi Iyer",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 4,
+    "region": "West",
+    "email": "aditi.iyer.109@example.com",
+    "phone": "+91-78073-55367",
+    "churn_risk_score": 0.27,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0110",
+    "name": "Kabir Khan",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 18,
+    "region": "South",
+    "email": "kabir.khan.110@example.com",
+    "phone": "+91-60030-88508",
+    "churn_risk_score": 0.22,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console",
+      "usage_analytics"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0111",
+    "name": "Deepak Mehta",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 42,
+    "region": "West",
+    "email": "deepak.mehta.111@example.com",
+    "phone": "+91-67360-46209",
+    "churn_risk_score": 0.22,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0112",
+    "name": "Rahul Reddy",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 51,
+    "region": "Northeast",
+    "email": "rahul.reddy.112@example.com",
+    "phone": "+91-93721-61058",
+    "churn_risk_score": 0.41,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console",
+      "usage_analytics"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0113",
+    "name": "Saanvi Sharma",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 43,
+    "region": "Central",
+    "email": "saanvi.sharma.113@example.com",
+    "phone": "+91-99528-65004",
+    "churn_risk_score": 0.42,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0114",
+    "name": "Tanvi Patel",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 80,
+    "region": "Northeast",
+    "email": "tanvi.patel.114@example.com",
+    "phone": "+91-86597-91954",
+    "churn_risk_score": 0.2,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0115",
+    "name": "Farhan Yadav",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 78,
+    "region": "Northeast",
+    "email": "farhan.yadav.115@example.com",
+    "phone": "+91-98435-51021",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console",
+      "usage_analytics"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0116",
+    "name": "Sanjay Nair",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 56,
+    "region": "North",
+    "email": "sanjay.nair.116@example.com",
+    "phone": "+91-66465-46496",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0117",
+    "name": "Riya Saxena",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 44,
+    "region": "South",
+    "email": "riya.saxena.117@example.com",
+    "phone": "+91-96828-21407",
+    "churn_risk_score": 0.66,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0118",
+    "name": "Kabir Rao",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 83,
+    "region": "West",
+    "email": "kabir.rao.118@example.com",
+    "phone": "+91-65726-48525",
+    "churn_risk_score": 0.2,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0119",
+    "name": "Bhavna Iyer",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 68,
+    "region": "Northeast",
+    "email": "bhavna.iyer.119@example.com",
+    "phone": "+91-67587-29497",
+    "churn_risk_score": 0.34,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0120",
+    "name": "Ishita Yadav",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 35,
+    "region": "North",
+    "email": "ishita.yadav.120@example.com",
+    "phone": "+91-83961-43695",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0121",
+    "name": "Varun Gupta",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 25,
+    "region": "Northeast",
+    "email": "varun.gupta.121@example.com",
+    "phone": "+91-65839-58811",
+    "churn_risk_score": 0.45,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0122",
+    "name": "Sameer Saxena",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 14,
+    "region": "South",
+    "email": "sameer.saxena.122@example.com",
+    "phone": "+91-92713-43526",
+    "churn_risk_score": 0.22,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0123",
+    "name": "Tanvi Mehta",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 74,
+    "region": "South",
+    "email": "tanvi.mehta.123@example.com",
+    "phone": "+91-80967-59803",
+    "churn_risk_score": 0.2,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0124",
+    "name": "Farhan Chauhan",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 53,
+    "region": "East",
+    "email": "farhan.chauhan.124@example.com",
+    "phone": "+91-81317-95697",
+    "churn_risk_score": 0.28,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0125",
+    "name": "Kabir Mehta",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 14,
+    "region": "North",
+    "email": "kabir.mehta.125@example.com",
+    "phone": "+91-62731-17260",
+    "churn_risk_score": 0.15,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0126",
+    "name": "Divya Desai",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 69,
+    "region": "South",
+    "email": "divya.desai.126@example.com",
+    "phone": "+91-64915-53807",
+    "churn_risk_score": 0.62,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0127",
+    "name": "Vikram Reddy",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 7,
+    "region": "East",
+    "email": "vikram.reddy.127@example.com",
+    "phone": "+91-97978-94605",
+    "churn_risk_score": 0.05,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0128",
+    "name": "Gaurav Nair",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 58,
+    "region": "East",
+    "email": "gaurav.nair.128@example.com",
+    "phone": "+91-69799-96005",
+    "churn_risk_score": 0.37,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0129",
+    "name": "Divya Chauhan",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 84,
+    "region": "West",
+    "email": "divya.chauhan.129@example.com",
+    "phone": "+91-94185-79858",
+    "churn_risk_score": 0.15,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0130",
+    "name": "Vikram Joshi",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 79,
+    "region": "South",
+    "email": "vikram.joshi.130@example.com",
+    "phone": "+91-98391-84981",
+    "churn_risk_score": 0.12,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0131",
+    "name": "Ishita Reddy",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 47,
+    "region": "North",
+    "email": "ishita.reddy.131@example.com",
+    "phone": "+91-70274-31453",
+    "churn_risk_score": 0.87,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0132",
+    "name": "Kavya Nair",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 1,
+    "region": "West",
+    "email": "kavya.nair.132@example.com",
+    "phone": "+91-79920-44927",
+    "churn_risk_score": 0.36,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0133",
+    "name": "Saanvi Saxena",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 36,
+    "region": "North",
+    "email": "saanvi.saxena.133@example.com",
+    "phone": "+91-76100-64268",
+    "churn_risk_score": 0.27,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0134",
+    "name": "Kabir Chauhan",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 25,
+    "region": "Northeast",
+    "email": "kabir.chauhan.134@example.com",
+    "phone": "+91-62705-28607",
+    "churn_risk_score": 0.45,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0135",
+    "name": "Aditi Menon",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 68,
+    "region": "Central",
+    "email": "aditi.menon.135@example.com",
+    "phone": "+91-94365-59193",
+    "churn_risk_score": 0.2,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0136",
+    "name": "Kiran Bansal",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 24,
+    "region": "Central",
+    "email": "kiran.bansal.136@example.com",
+    "phone": "+91-88922-58852",
+    "churn_risk_score": 0.64,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0137",
+    "name": "Pooja Rao",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 24,
+    "region": "Northeast",
+    "email": "pooja.rao.137@example.com",
+    "phone": "+91-90752-94228",
+    "churn_risk_score": 0.13,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0138",
+    "name": "Tanvi Verma",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 15,
+    "region": "West",
+    "email": "tanvi.verma.138@example.com",
+    "phone": "+91-79222-26830",
+    "churn_risk_score": 0.24,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0139",
+    "name": "Sameer Reddy",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 59,
+    "region": "Northeast",
+    "email": "sameer.reddy.139@example.com",
+    "phone": "+91-62378-85775",
+    "churn_risk_score": 0.25,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0140",
+    "name": "Pranav Iyer",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 78,
+    "region": "West",
+    "email": "pranav.iyer.140@example.com",
+    "phone": "+91-65460-17250",
+    "churn_risk_score": 0.13,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0141",
+    "name": "Bhavna Gupta",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 40,
+    "region": "Northeast",
+    "email": "bhavna.gupta.141@example.com",
+    "phone": "+91-85935-52642",
+    "churn_risk_score": 0.41,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0142",
+    "name": "Sanjay Sharma",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 80,
+    "region": "West",
+    "email": "sanjay.sharma.142@example.com",
+    "phone": "+91-78128-84008",
+    "churn_risk_score": 0.3,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0143",
+    "name": "Farhan Reddy",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 78,
+    "region": "South",
+    "email": "farhan.reddy.143@example.com",
+    "phone": "+91-87195-77061",
+    "churn_risk_score": 0.44,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0144",
+    "name": "Aarav Kapoor",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 74,
+    "region": "Central",
+    "email": "aarav.kapoor.144@example.com",
+    "phone": "+91-79045-72308",
+    "churn_risk_score": 0.14,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0145",
+    "name": "Pooja Patel",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 77,
+    "region": "South",
+    "email": "pooja.patel.145@example.com",
+    "phone": "+91-94505-36685",
+    "churn_risk_score": 0.54,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0146",
+    "name": "Priya Gupta",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 67,
+    "region": "South",
+    "email": "priya.gupta.146@example.com",
+    "phone": "+91-91034-67436",
+    "churn_risk_score": 0.09,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0147",
+    "name": "Nikhil Khan",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 73,
+    "region": "Northeast",
+    "email": "nikhil.khan.147@example.com",
+    "phone": "+91-64353-29434",
+    "churn_risk_score": 0.15,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0148",
+    "name": "Deepak Iyer",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 48,
+    "region": "South",
+    "email": "deepak.iyer.148@example.com",
+    "phone": "+91-72879-80894",
+    "churn_risk_score": 0.71,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [],
+    "account_status": "suspended"
+  },
+  {
+    "customer_id": "CUST0149",
+    "name": "Gaurav Singh",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 21,
+    "region": "Central",
+    "email": "gaurav.singh.149@example.com",
+    "phone": "+91-98052-12167",
+    "churn_risk_score": 0.48,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0150",
+    "name": "Riya Chauhan",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 68,
+    "region": "North",
+    "email": "riya.chauhan.150@example.com",
+    "phone": "+91-60311-97924",
+    "churn_risk_score": 0.06,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0151",
+    "name": "Aarav Reddy",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 56,
+    "region": "North",
+    "email": "aarav.reddy.151@example.com",
+    "phone": "+91-73300-91278",
+    "churn_risk_score": 0.46,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0152",
+    "name": "Meera Gupta",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 38,
+    "region": "Central",
+    "email": "meera.gupta.152@example.com",
+    "phone": "+91-73882-76165",
+    "churn_risk_score": 0.26,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console",
+      "usage_analytics"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0153",
+    "name": "Saanvi Shah",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 10,
+    "region": "East",
+    "email": "saanvi.shah.153@example.com",
+    "phone": "+91-71500-45164",
+    "churn_risk_score": 0.4,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0154",
+    "name": "Rohan Kulkarni",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 68,
+    "region": "East",
+    "email": "rohan.kulkarni.154@example.com",
+    "phone": "+91-88216-91177",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0155",
+    "name": "Nikhil Wandre",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 58,
+    "region": "Central",
+    "email": "nikhil.wandre.155@example.com",
+    "phone": "+91-86087-38699",
+    "churn_risk_score": 0.48,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0156",
+    "name": "Ishita Mishra",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 6,
+    "region": "Central",
+    "email": "ishita.mishra.156@example.com",
+    "phone": "+91-70614-51823",
+    "churn_risk_score": 0.35,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0157",
+    "name": "Sneha Shah",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 21,
+    "region": "Northeast",
+    "email": "sneha.shah.157@example.com",
+    "phone": "+91-83480-22795",
+    "churn_risk_score": 0.27,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0158",
+    "name": "Kabir Sharma",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 71,
+    "region": "East",
+    "email": "kabir.sharma.158@example.com",
+    "phone": "+91-70922-27605",
+    "churn_risk_score": 0.16,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0159",
+    "name": "Aditi Sharma",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 50,
+    "region": "West",
+    "email": "aditi.sharma.159@example.com",
+    "phone": "+91-81778-46631",
+    "churn_risk_score": 0.07,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0160",
+    "name": "Arjun Jain",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 84,
+    "region": "South",
+    "email": "arjun.jain.160@example.com",
+    "phone": "+91-66820-71440",
+    "churn_risk_score": 0.38,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0161",
+    "name": "Priya Sharma",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 14,
+    "region": "West",
+    "email": "priya.sharma.161@example.com",
+    "phone": "+91-81212-58262",
+    "churn_risk_score": 0.31,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0162",
+    "name": "Saanvi Menon",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 12,
+    "region": "Northeast",
+    "email": "saanvi.menon.162@example.com",
+    "phone": "+91-85625-64631",
+    "churn_risk_score": 0.64,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0163",
+    "name": "Rahul Khan",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 41,
+    "region": "South",
+    "email": "rahul.khan.163@example.com",
+    "phone": "+91-87812-61619",
+    "churn_risk_score": 0.23,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0164",
+    "name": "Akash Jain",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 21,
+    "region": "Central",
+    "email": "akash.jain.164@example.com",
+    "phone": "+91-94586-25375",
+    "churn_risk_score": 0.54,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0165",
+    "name": "Kabir Shah",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 68,
+    "region": "South",
+    "email": "kabir.shah.165@example.com",
+    "phone": "+91-77689-23172",
+    "churn_risk_score": 0.21,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0166",
+    "name": "Sneha Mehta",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 55,
+    "region": "Northeast",
+    "email": "sneha.mehta.166@example.com",
+    "phone": "+91-68844-50425",
+    "churn_risk_score": 0.42,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0167",
+    "name": "Farhan Menon",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 46,
+    "region": "West",
+    "email": "farhan.menon.167@example.com",
+    "phone": "+91-94644-91737",
+    "churn_risk_score": 0.26,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0168",
+    "name": "Saanvi Iyer",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 39,
+    "region": "Northeast",
+    "email": "saanvi.iyer.168@example.com",
+    "phone": "+91-66978-93591",
+    "churn_risk_score": 0.19,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0169",
+    "name": "Riya Joshi",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 72,
+    "region": "South",
+    "email": "riya.joshi.169@example.com",
+    "phone": "+91-65183-59833",
+    "churn_risk_score": 0.11,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0170",
+    "name": "Aditi Chauhan",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 8,
+    "region": "South",
+    "email": "aditi.chauhan.170@example.com",
+    "phone": "+91-89394-51233",
+    "churn_risk_score": 0.57,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [],
+    "account_status": "suspended"
+  },
+  {
+    "customer_id": "CUST0171",
+    "name": "Deepak Kulkarni",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 49,
+    "region": "North",
+    "email": "deepak.kulkarni.171@example.com",
+    "phone": "+91-64536-60695",
+    "churn_risk_score": 0.19,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0172",
+    "name": "Sneha Gupta",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 14,
+    "region": "Central",
+    "email": "sneha.gupta.172@example.com",
+    "phone": "+91-77292-27557",
+    "churn_risk_score": 0.7,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0173",
+    "name": "Aditi Khan",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 23,
+    "region": "West",
+    "email": "aditi.khan.173@example.com",
+    "phone": "+91-77808-15518",
+    "churn_risk_score": 0.33,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console",
+      "usage_analytics"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0174",
+    "name": "Riya Bansal",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 31,
+    "region": "North",
+    "email": "riya.bansal.174@example.com",
+    "phone": "+91-66319-58131",
+    "churn_risk_score": 0.29,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0175",
+    "name": "Varun Yadav",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 43,
+    "region": "South",
+    "email": "varun.yadav.175@example.com",
+    "phone": "+91-95558-19596",
+    "churn_risk_score": 0.07,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0176",
+    "name": "Sanjay Joshi",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 69,
+    "region": "Central",
+    "email": "sanjay.joshi.176@example.com",
+    "phone": "+91-88295-89314",
+    "churn_risk_score": 0.14,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0177",
+    "name": "Rohan Jain",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 25,
+    "region": "Central",
+    "email": "rohan.jain.177@example.com",
+    "phone": "+91-97322-43962",
+    "churn_risk_score": 0.47,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0178",
+    "name": "Akash Verma",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 58,
+    "region": "East",
+    "email": "akash.verma.178@example.com",
+    "phone": "+91-61012-27751",
+    "churn_risk_score": 0.55,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0179",
+    "name": "Varun Rao",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 73,
+    "region": "Central",
+    "email": "varun.rao.179@example.com",
+    "phone": "+91-72471-31295",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0180",
+    "name": "Nikhil Bansal",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 52,
+    "region": "Central",
+    "email": "nikhil.bansal.180@example.com",
+    "phone": "+91-83432-44142",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0181",
+    "name": "Pooja Mehta",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 49,
+    "region": "East",
+    "email": "pooja.mehta.181@example.com",
+    "phone": "+91-96222-54727",
+    "churn_risk_score": 0.38,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0182",
+    "name": "Nikhil Mehta",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 48,
+    "region": "West",
+    "email": "nikhil.mehta.182@example.com",
+    "phone": "+91-76965-81214",
+    "churn_risk_score": 0.6,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0183",
+    "name": "Bhavna Kulkarni",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 41,
+    "region": "West",
+    "email": "bhavna.kulkarni.183@example.com",
+    "phone": "+91-82834-22868",
+    "churn_risk_score": 0.21,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0184",
+    "name": "Saanvi Yadav",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 39,
+    "region": "Central",
+    "email": "saanvi.yadav.184@example.com",
+    "phone": "+91-68382-28840",
+    "churn_risk_score": 0.48,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0185",
+    "name": "Aarav Desai",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 1,
+    "region": "East",
+    "email": "aarav.desai.185@example.com",
+    "phone": "+91-78433-61386",
+    "churn_risk_score": 0.25,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0186",
+    "name": "Sameer Khan",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 28,
+    "region": "West",
+    "email": "sameer.khan.186@example.com",
+    "phone": "+91-65944-27531",
+    "churn_risk_score": 0.4,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "past_due"
+  },
+  {
+    "customer_id": "CUST0187",
+    "name": "Arjun Joshi",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 72,
+    "region": "Northeast",
+    "email": "arjun.joshi.187@example.com",
+    "phone": "+91-84067-34153",
+    "churn_risk_score": 0.14,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0188",
+    "name": "Varun Jain",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 48,
+    "region": "North",
+    "email": "varun.jain.188@example.com",
+    "phone": "+91-74557-90961",
+    "churn_risk_score": 0.49,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0189",
+    "name": "Deepak Patel",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 84,
+    "region": "Northeast",
+    "email": "deepak.patel.189@example.com",
+    "phone": "+91-99894-42747",
+    "churn_risk_score": 0.02,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0190",
+    "name": "Gaurav Bansal",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 2,
+    "region": "West",
+    "email": "gaurav.bansal.190@example.com",
+    "phone": "+91-89982-16758",
+    "churn_risk_score": 0.29,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0191",
+    "name": "Pranav Yadav",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 59,
+    "region": "Northeast",
+    "email": "pranav.yadav.191@example.com",
+    "phone": "+91-81452-98438",
+    "churn_risk_score": 0.17,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0192",
+    "name": "Aarav Verma",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 45,
+    "region": "Northeast",
+    "email": "aarav.verma.192@example.com",
+    "phone": "+91-61582-57559",
+    "churn_risk_score": 0.53,
+    "outstanding_invoice": 1,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0193",
+    "name": "Aarav Mehta",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 27,
+    "region": "Central",
+    "email": "aarav.mehta.193@example.com",
+    "phone": "+91-95134-23918",
+    "churn_risk_score": 0.03,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0194",
+    "name": "Ananya Sharma",
+    "plan": "Business",
+    "monthly_fee": 1999,
+    "tenure_months": 22,
+    "region": "Central",
+    "email": "ananya.sharma.194@example.com",
+    "phone": "+91-91056-77459",
+    "churn_risk_score": 0.23,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "dedicated_support",
+      "uhd_streaming",
+      "10_devices",
+      "admin_console",
+      "usage_reports"
+    ],
+    "active_services": [
+      "streaming",
+      "admin_console",
+      "usage_analytics"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0195",
+    "name": "Pranav Jain",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 79,
+    "region": "North",
+    "email": "pranav.jain.195@example.com",
+    "phone": "+91-66115-84673",
+    "churn_risk_score": 0.01,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0196",
+    "name": "Sanjay Verma",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 11,
+    "region": "Northeast",
+    "email": "sanjay.verma.196@example.com",
+    "phone": "+91-83934-77965",
+    "churn_risk_score": 0.29,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0197",
+    "name": "Arjun Shah",
+    "plan": "Standard",
+    "monthly_fee": 599,
+    "tenure_months": 48,
+    "region": "North",
+    "email": "arjun.shah.197@example.com",
+    "phone": "+91-96675-95809",
+    "churn_risk_score": 0.41,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "chat_support",
+      "hd_streaming",
+      "2_devices"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0198",
+    "name": "Aditi Nair",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 45,
+    "region": "Northeast",
+    "email": "aditi.nair.198@example.com",
+    "phone": "+91-89711-79971",
+    "churn_risk_score": 0.52,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0199",
+    "name": "Pranav Reddy",
+    "plan": "Premium",
+    "monthly_fee": 999,
+    "tenure_months": 51,
+    "region": "North",
+    "email": "pranav.reddy.199@example.com",
+    "phone": "+91-83148-13705",
+    "churn_risk_score": 0.09,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "priority_support",
+      "uhd_streaming",
+      "4_devices",
+      "offline_downloads"
+    ],
+    "active_services": [
+      "streaming",
+      "cloud_dvr",
+      "offline_downloads"
+    ],
+    "account_status": "active"
+  },
+  {
+    "customer_id": "CUST0200",
+    "name": "Gaurav Jain",
+    "plan": "Basic",
+    "monthly_fee": 299,
+    "tenure_months": 26,
+    "region": "North",
+    "email": "gaurav.jain.200@example.com",
+    "phone": "+91-81810-83283",
+    "churn_risk_score": 0.41,
+    "outstanding_invoice": 0,
+    "entitlements": [
+      "email_support",
+      "sd_streaming",
+      "1_device"
+    ],
+    "active_services": [
+      "streaming"
+    ],
+    "account_status": "active"
+  }
+]
