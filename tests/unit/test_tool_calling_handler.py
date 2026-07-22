@@ -102,9 +102,15 @@ class _RuleEngine:
         self,
         tool_name: str,
         arguments: dict[str, Any],
+        *,
+        human_approved: bool = False,
     ) -> ActionExecutionResult:
         self.calls.append((tool_name, arguments))
-        if tool_name == "issue_refund" and arguments["amount"] > 1_000:
+        if (
+            tool_name == "issue_refund"
+            and arguments["amount"] > 1_000
+            and not human_approved
+        ):
             validation = self._validation(
                 tool_name,
                 arguments,
@@ -143,6 +149,17 @@ class _RuleEngine:
                         },
                     }
                 ],
+            }
+        elif tool_name == "issue_refund":
+            output = {
+                "success": True,
+                "error": None,
+                "status": "issued",
+                "customer_id": arguments["customer_id"],
+                "amount": arguments["amount"],
+                "approval_required": True,
+                "transaction_id": "RFND000001",
+                "reason": arguments["reason"],
             }
         else:
             output = {"success": True, "error": None}
@@ -278,3 +295,119 @@ def test_large_refund_is_not_executed_and_is_escalated() -> None:
     assert result.tool_calls[0].status == "requires_human_approval"
     assert result.status == "escalated"
     assert result.action == "escalate"
+
+
+def test_human_can_approve_large_refund_and_model_loop_continues() -> None:
+    approvals = []
+    client = _ScriptedClient(
+        [
+            _tool_message(
+                "call-1",
+                "issue_refund",
+                {
+                    "customer_id": "CUST0094",
+                    "amount": 10_000,
+                    "reason": "Verified duplicate charge",
+                },
+            ),
+            _final_message(
+                "The approved refund was issued.",
+                confidence=0.95,
+                action="answer",
+            ),
+        ]
+    )
+    engine = _RuleEngine()
+
+    def approve(request):
+        approvals.append(request)
+        return True
+
+    handler = LLMToolCallingHandler(
+        client=client,
+        rule_engine=engine,
+        model="test-model",
+        approval_callback=approve,
+    )
+
+    result = handler(
+        "refund",
+        _state("Refund 10000.", customer_id="CUST0094"),
+    )
+
+    assert len(approvals) == 1
+    assert approvals[0].amount == 10_000
+    assert [name for name, _ in engine.calls] == [
+        "issue_refund",
+        "issue_refund",
+    ]
+    assert result.tool_calls[0].executed
+    assert result.tool_calls[0].status == "issued"
+    assert result.status == "completed"
+    assert result.action == "answer"
+    assert not result.policy_based
+
+
+def test_human_denial_keeps_refund_unexecuted_and_escalates() -> None:
+    approvals = []
+    client = _ScriptedClient(
+        [
+            _tool_message(
+                "call-1",
+                "issue_refund",
+                {
+                    "customer_id": "CUST0094",
+                    "amount": 10_000,
+                    "reason": "Customer requested refund",
+                },
+            ),
+            _tool_message(
+                "call-2",
+                "escalate_to_human",
+                {
+                    "customer_id": "CUST0094",
+                    "reason": "Refund requires human approval.",
+                },
+            ),
+            # Even if the model proposes an answer, the control layer must
+            # override it because the high-impact action remains unapproved.
+            _final_message(
+                "The request was reviewed.",
+                confidence=0.9,
+                action="answer",
+            ),
+        ]
+    )
+    engine = _RuleEngine()
+
+    def deny(request):
+        approvals.append(request)
+        return False
+
+    handler = LLMToolCallingHandler(
+        client=client,
+        rule_engine=engine,
+        model="test-model",
+        approval_callback=deny,
+    )
+
+    result = handler(
+        "refund",
+        _state("Refund 10000.", customer_id="CUST0094"),
+    )
+
+    assert len(approvals) == 1
+    assert [name for name, _ in engine.calls] == [
+        "issue_refund",
+        "escalate_to_human",
+    ]
+    assert not result.tool_calls[0].executed
+    assert result.tool_calls[0].status == "human_approval_denied"
+    assert result.tool_calls[1].arguments["reason"] == (
+        "Refund was not issued because human approval was denied."
+    )
+    assert result.tool_calls[1].executed
+    assert result.status == "escalated"
+    assert result.action == "escalate"
+    assert "not issued" in result.summary
+    assert "denied" in result.summary

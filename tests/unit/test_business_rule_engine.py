@@ -5,8 +5,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pytest
+
 from customer_ops_agent.business_rules import BusinessRuleEngine
 from customer_ops_agent.observability import ObservabilityStore
+from customer_ops_agent.tools import audit, mock_tools
 
 
 def test_large_refund_requires_trusted_human_approval() -> None:
@@ -29,6 +32,41 @@ def test_large_refund_requires_trusted_human_approval() -> None:
     assert blocked.requires_human_approval
     assert approved.approved
     assert approved.status == "approved"
+
+
+def test_real_refund_tool_executes_only_after_trusted_approval(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    observability = ObservabilityStore(
+        tmp_path / "tool_calls.csv",
+        tmp_path / "conversation_logs.json",
+    )
+    monkeypatch.setattr(audit, "TOOL_LOG_PATH", tmp_path / "mock_tools.jsonl")
+    monkeypatch.setattr(audit, "TOOL_OBSERVABILITY_STORE", observability)
+    mock_tools._reset_mock_state()
+    engine = BusinessRuleEngine(observability_store=observability)
+    arguments = {
+        "customer_id": "CUST0094",
+        "amount": 10_000,
+        "reason": "Verified duplicate charge",
+    }
+
+    pending = engine.execute_action("issue_refund", arguments)
+    issued = engine.execute_action(
+        "issue_refund",
+        arguments,
+        human_approved=True,
+    )
+
+    assert not pending.executed
+    assert pending.validation.status == "requires_human_approval"
+    assert issued.executed
+    assert issued.tool_output is not None
+    assert issued.tool_output["status"] == "issued"
+    assert issued.tool_output["approval_required"]
+    assert issued.tool_output["transaction_id"] == "RFND000001"
+    mock_tools._reset_mock_state()
 
 
 def test_retention_requires_percentage_tenure_risk_and_unique_offer() -> None:

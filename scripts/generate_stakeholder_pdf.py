@@ -20,7 +20,6 @@ MUTED = HexColor("#556176")
 ACCENT = HexColor("#1957A6")
 LIGHT = HexColor("#EAF1FA")
 LINE = HexColor("#AAB6C8")
-SAFE = HexColor("#177245")
 
 
 def heading(canvas: Canvas, text: str, y: float, size: int = 14) -> float:
@@ -105,71 +104,63 @@ def draw_page_one(canvas: Canvas) -> None:
     canvas.drawString(
         MARGIN,
         PAGE_HEIGHT - 66,
-        "Tier 1 + Tier 2 architecture, controls, and engineering tradeoffs",
+        "A simple view of architecture, controls, decisions, and tradeoffs",
     )
 
     y = heading(canvas, "Architecture", PAGE_HEIGHT - 98)
     available = PAGE_WIDTH - 2 * MARGIN
-    gap = 10
-    box_width = (available - 4 * gap) / 5
-    row_one = [
+    main_gap = 5
+    main_box_width = (available - 7 * main_gap) / 8
+    main_flow = [
         "Customer input",
+        "Load memory",
         "Input guardrails",
-        "Memory context",
         "LLM planner",
-        "Specialist handler",
+        "Specialist route",
+        "Response formatter",
+        "Output guardrails",
+        "Save memory",
     ]
-    row_two = [
-        "LLM tool loop",
-        "Tool validator",
-        "Business rules",
-        "Mock tools / FAISS",
-        "Output validator",
+    main_x_positions = [
+        MARGIN + index * (main_box_width + main_gap) for index in range(8)
     ]
-    x_positions = [
-        MARGIN + index * (box_width + gap) for index in range(5)
-    ]
-    top_y = y - 45
-    lower_y = top_y - 66
-    for index, label in enumerate(row_one):
-        box(canvas, x_positions[index], top_y, box_width, label)
-        if index < 4:
+    main_y = y - 45
+    for index, label in enumerate(main_flow):
+        box(canvas, main_x_positions[index], main_y, main_box_width, label)
+        if index < 7:
             arrow(
                 canvas,
-                x_positions[index] + box_width,
-                top_y + 19,
-                x_positions[index + 1],
+                main_x_positions[index] + main_box_width,
+                main_y + 19,
+                main_x_positions[index + 1],
             )
-    for index, label in enumerate(row_two):
-        box(canvas, x_positions[index], lower_y, box_width, label)
-        if index < 4:
-            arrow(
-                canvas,
-                x_positions[index] + box_width,
-                lower_y + 19,
-                x_positions[index + 1],
-            )
-    canvas.setStrokeColor(ACCENT)
-    canvas.line(
-        x_positions[-1] + box_width / 2,
-        top_y,
-        x_positions[-1] + box_width / 2,
-        lower_y + 38,
-    )
-    canvas.line(
-        x_positions[-1] + box_width / 2,
-        lower_y + 38,
-        x_positions[0] + box_width / 2,
-        lower_y + 38,
-    )
-    canvas.line(
-        x_positions[0] + box_width / 2,
-        lower_y + 38,
-        x_positions[0] + box_width / 2,
-        lower_y + 34,
-    )
 
-    bar_y = lower_y - 34
+    canvas.setFillColor(MUTED)
+    canvas.setFont("Helvetica-Bold", 7)
+    canvas.drawString(MARGIN, main_y - 14, "INSIDE THE SPECIALIST'S BOUNDED TOOL LOOP")
+    tool_gap = 10
+    tool_box_width = (available - 3 * tool_gap) / 4
+    tool_flow = [
+        "LLM tool choice",
+        "Tool guardrails",
+        "Business rules",
+        "Mock systems / RAG",
+    ]
+    tool_x_positions = [
+        MARGIN + index * (tool_box_width + tool_gap) for index in range(4)
+    ]
+    tool_y = main_y - 65
+    for index, label in enumerate(tool_flow):
+        box(canvas, tool_x_positions[index], tool_y, tool_box_width, label)
+        if index < 3:
+            arrow(
+                canvas,
+                tool_x_positions[index] + tool_box_width,
+                tool_y + 19,
+                tool_x_positions[index + 1],
+            )
+
+    bar_y = tool_y - 34
     canvas.setFillColor(HexColor("#F4F6F9"))
     canvas.setStrokeColor(LINE)
     canvas.roundRect(MARGIN, bar_y, available, 24, 4, fill=1, stroke=1)
@@ -185,11 +176,11 @@ def draw_page_one(canvas: Canvas) -> None:
     y = bullets(
         canvas,
         [
-            "One graph-based agent with an LLM router and focused specialists: explicit control flow and simpler recovery, at the cost of two model stages.",
-            "The model chooses tools, but deterministic Pydantic validation and the BusinessRuleEngine decide whether actions execute.",
-            "FAISS and JSON keep the assignment self-contained and inexpensive; they are not multi-process or horizontally scalable stores.",
-            "Mock business systems make runs safe and repeatable while preserving realistic budgets, approval gates, tickets, and audit traces.",
-            "Policy answers fail closed without KB citations; this reduces hallucination risk but can increase safe escalations when retrieval fails.",
+            "LangGraph was chosen instead of one large prompt: each step is visible, testable, and recoverable; the tradeoff is more orchestration code and model calls.",
+            "OpenAI performs intent routing and genuine tool selection; deterministic Pydantic validation and the BusinessRuleEngine retain authority over execution.",
+            "FAISS provides fast local semantic retrieval and JSON keeps memory simple; both are inexpensive for a demo but not suitable as shared production stores.",
+            "Mock CRM, billing, and ticket systems make actions safe and repeatable while preserving realistic budgets, approvals, IDs, and audit traces.",
+            "Policy and troubleshooting answers fail closed without grounding; this reduces hallucination risk but may increase safe escalations when retrieval fails.",
         ],
         y,
     )
@@ -200,7 +191,7 @@ def draw_page_one(canvas: Canvas) -> None:
         [
             "Before the LLM: prompt-injection detection, PII masking, abuse review, and blocked-input routing.",
             "Before each action: tool allowlist, strict arguments, customer isolation, maximum calls, dead-loop detection, and circuit breaking.",
-            "Financial controls: refunds above INR 1,000 require human handling; offers are at most 20% with a total INR 10,000 run budget.",
+            "Financial controls: refunds above INR 1,000 pause for trusted yes/no approval; offers are capped at 20% and share an INR 10,000 run budget.",
             "Before delivery: structured output schema, confidence threshold, citation requirement, PII masking, and safe fallback.",
         ],
         y,
@@ -211,7 +202,7 @@ def draw_page_one(canvas: Canvas) -> None:
 def draw_page_two(canvas: Canvas) -> None:
     canvas.setFillColor(TEXT)
     canvas.setFont("Helvetica-Bold", 20)
-    canvas.drawString(MARGIN, PAGE_HEIGHT - 48, "Evidence, rollout, cost, and risk")
+    canvas.drawString(MARGIN, PAGE_HEIGHT - 48, "Evaluation, rollout, cost, and risk")
     canvas.setFillColor(MUTED)
     canvas.setFont("Helvetica", 9)
     canvas.drawString(
@@ -220,14 +211,14 @@ def draw_page_two(canvas: Canvas) -> None:
         "Submission scope: Tier 1 and Tier 2; Tier 3 is not claimed",
     )
 
-    y = heading(canvas, "Verification evidence", PAGE_HEIGHT - 96)
+    y = heading(canvas, "Evaluation results", PAGE_HEIGHT - 96)
     y = bullets(
         canvas,
         [
-            "42 deterministic tests pass, including 12 integration scenarios for billing, refund, cancellation, technical support, injection, abuse, ambiguity, budgets, approval, circuit breaking, and loops.",
-            "Scripted model tests prove genuine tool-selection flow: customer lookup, KB search, grounded citation capture, cross-customer rejection, and large-refund escalation.",
-            "Offline CLI and Streamlit dashboard render successfully; every graph request and tool call is logged.",
-            "Live OpenAI connectivity reached the provider but returned 429 insufficient_quota. The graph logged the failure and returned a safe human-support response.",
+            "45 deterministic tests pass: 12 integration test cases across 11 scenario categories, plus unit coverage for routing, tools, memory, guardrails, RAG, observability, and HITL.",
+            "Tool-loop tests prove model-selected customer lookup, KB search, grounded citation capture, strict customer isolation, and controlled action execution.",
+            "HITL tests prove both paths: approval revalidates and issues the refund; rejection leaves it unexecuted and creates a human escalation.",
+            "Failure scenarios verify prompt-injection blocking, budget exhaustion, circuit breaking, dead-loop detection, and safe provider fallback.",
         ],
         y,
     )
@@ -253,7 +244,7 @@ def draw_page_two(canvas: Canvas) -> None:
             "Primary variable costs are planner/specialist tokens and KB embeddings; cache stable embeddings and keep prompts/tool results compact.",
             "Retention discounts directly reduce revenue, so eligibility and aggregate budget are enforced in code rather than prompts.",
             "Provider quota, latency, and outages can interrupt automation; retries, circuit breakers, observability, and human fallback limit impact.",
-            "PII and payment data create privacy risk; mask before model use, minimize logs, encrypt durable stores, and apply retention policies.",
+            "PII and billing data create privacy risk; mask before model use, minimize logs, encrypt durable stores, and apply retention policies.",
             "Model confidence is self-reported and not calibrated; production thresholds require empirical validation against human-reviewed outcomes.",
         ],
         y,
@@ -271,13 +262,6 @@ def draw_page_two(canvas: Canvas) -> None:
         y,
     )
 
-    canvas.setFillColor(SAFE)
-    canvas.setFont("Helvetica-Bold", 8)
-    canvas.drawString(
-        MARGIN,
-        55,
-        "Current recommendation: demonstrate with a funded API key, then record the required 2-4 minute live video.",
-    )
     footer(canvas, 2)
 
 

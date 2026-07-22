@@ -22,6 +22,14 @@ class ToolCallTrace(BaseModel):
     reason: str = ""
 
 
+class HumanApprovalRequest(BaseModel):
+    """Trusted prompt shown outside the LLM for a high-impact refund."""
+
+    customer_id: str
+    amount: float = Field(gt=0)
+    reason: str
+
+
 class HandlerResult(BaseModel):
     """Validated output from a specialist tool-calling loop."""
 

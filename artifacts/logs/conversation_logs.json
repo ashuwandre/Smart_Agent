@@ -52,6 +52,248 @@
       "guardrail_decision": "allow",
       "error": null,
       "circuit_breakers": {}
+    },
+    {
+      "timestamp": "2026-07-22T18:02:15.868398Z",
+      "conversation_id": "cli-demo",
+      "customer": "CUST0003",
+      "request": "Why is my bill higher?",
+      "response": "I cannot process this request automatically right now. Please route it to human support.",
+      "route": null,
+      "status": "error",
+      "confidence": 1.0,
+      "latency": 1897.827,
+      "guardrail_decision": "allow",
+      "error": "Planner unavailable: AuthenticationError.",
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T18:05:42.988329Z",
+      "conversation_id": "cli-demo",
+      "customer": "CUST0003",
+      "request": "Why is my bill higher?",
+      "response": "I cannot process this request automatically right now. Please route it to human support.",
+      "route": null,
+      "status": "error",
+      "confidence": 1.0,
+      "latency": 21221.429,
+      "guardrail_decision": "allow",
+      "error": "Planner unavailable: RateLimitError.",
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T18:16:00.830999Z",
+      "conversation_id": "cli-demo",
+      "customer": "CUST0003",
+      "request": "Why is my bill higher?",
+      "response": "I cannot process this request automatically right now. Please route it to human support.",
+      "route": null,
+      "status": "error",
+      "confidence": 1.0,
+      "latency": 22332.21,
+      "guardrail_decision": "allow",
+      "error": "Planner unavailable: RateLimitError.",
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T18:20:24.389370Z",
+      "conversation_id": "cli-demo",
+      "customer": "CUST0003",
+      "request": "Why is my bill higher?",
+      "response": "I cannot process this request automatically right now. Please route it to human support.",
+      "route": null,
+      "status": "error",
+      "confidence": 1.0,
+      "latency": 21104.441,
+      "guardrail_decision": "allow",
+      "error": "Planner unavailable: RateLimitError.",
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T18:33:39.826855Z",
+      "conversation_id": "cli-demo",
+      "customer": "CUST0003",
+      "request": "Why is my bill higher?",
+      "response": "Your bill may be higher due to several reasons, including:\n1. **Plan Changes**: If you upgraded your plan, the new monthly fee would apply immediately unless you specified otherwise.\n2. **Additional Charges**: There may be taxes or usage charges that appear as separate line items on your invoice.\n3. **Billing Cycle**: Subscriptions are billed in advance on your renewal date, and any changes in your plan or entitlements can affect the total amount.\n\nCurrently, you are on the Standard plan, which has a monthly fee of $599. If there have been any changes to your plan or additional charges, those could contribute to a higher bill. Please check your invoice for specific details regarding any additional charges or changes.\n\nSources:\n- billing_policy.md#billing_policy:0001\n- billing_policy.md#billing_policy:0002\n- plans_and_entitlements.md#plans_and_entitlements:0001",
+      "route": "billing",
+      "status": "completed",
+      "confidence": 0.9,
+      "latency": 15918.742,
+      "guardrail_decision": "allow",
+      "error": null,
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T18:36:41.705826Z",
+      "conversation_id": "cli-demo",
+      "customer": "CUST0094",
+      "request": "request refund of 10000",
+      "response": null,
+      "route": null,
+      "status": "error",
+      "confidence": null,
+      "latency": 12.161,
+      "guardrail_decision": null,
+      "error": "ValueError: Conversation customer_id does not match stored memory.",
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T18:38:22.584676Z",
+      "conversation_id": "cli-demo",
+      "customer": "CUST0094",
+      "request": "Request a refund of 10000",
+      "response": null,
+      "route": null,
+      "status": "error",
+      "confidence": null,
+      "latency": 7.775,
+      "guardrail_decision": null,
+      "error": "ValueError: Conversation customer_id does not match stored memory.",
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T18:39:08.581798Z",
+      "conversation_id": "cli-cust0094",
+      "customer": "CUST0094",
+      "request": "Request a refund of 10000",
+      "response": "The refund handler received the request. No customer action was executed in offline mock mode.",
+      "route": "refund",
+      "status": "completed",
+      "confidence": 1.0,
+      "latency": 31.989,
+      "guardrail_decision": "allow",
+      "error": null,
+      "circuit_breakers": {}
+    },
+    {
+      "timestamp": "2026-07-22T18:40:13.071739Z",
+      "conversation_id": "cli-cust0094",
+      "customer": "CUST0094",
+      "request": "Request a refund of 10000",
+      "response": "Your refund request of ₹10,000 has been escalated for human approval. You will be notified once the review is complete.",
+      "route": "refund",
+      "status": "completed",
+      "confidence": 1.0,
+      "latency": 9857.997,
+      "guardrail_decision": "allow",
+      "error": null,
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T18:56:39.596049Z",
+      "conversation_id": "cli-cust0094",
+      "customer": "CUST0094",
+      "request": "Request a refund of 10000",
+      "response": "I cannot provide a reliable response automatically. The request requires human support.",
+      "route": "refund",
+      "status": "completed",
+      "confidence": 1.0,
+      "latency": 57862.451,
+      "guardrail_decision": "allow",
+      "error": null,
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T18:57:04.261857Z",
+      "conversation_id": "cli-cust0094",
+      "customer": "CUST0094",
+      "request": "Request a refund of 10000",
+      "response": "Your refund request of ₹10,000 has been escalated for human approval. You will be notified once the review is complete.",
+      "route": "refund",
+      "status": "completed",
+      "confidence": 1.0,
+      "latency": 13854.626,
+      "guardrail_decision": "allow",
+      "error": null,
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T19:11:54.422165Z",
+      "conversation_id": "cli-cust0094",
+      "customer": "CUST0094",
+      "request": "Request a refund of 10000",
+      "response": "Your refund request of ₹10,000 has been successfully processed and approved. The transaction ID for your refund is RFND000001.",
+      "route": "refund",
+      "status": "completed",
+      "confidence": 1.0,
+      "latency": 27198.21,
+      "guardrail_decision": "allow",
+      "error": null,
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
+    },
+    {
+      "timestamp": "2026-07-22T19:12:24.704287Z",
+      "conversation_id": "cli-cust0094",
+      "customer": "CUST0094",
+      "request": "Request a refund of 10000",
+      "response": "The refund was not issued because human approval was denied. The request was escalated to human support for follow-up.",
+      "route": "refund",
+      "status": "completed",
+      "confidence": 1.0,
+      "latency": 14822.5,
+      "guardrail_decision": "allow",
+      "error": null,
+      "circuit_breakers": {
+        "billing_llm": "closed",
+        "refund_llm": "closed",
+        "technical_llm": "closed",
+        "retention_llm": "closed"
+      }
     }
   ]
 }

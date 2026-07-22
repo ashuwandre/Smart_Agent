@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import os
-from collections.abc import Mapping
+from collections.abc import Callable, Mapping
 from pathlib import Path
 from typing import Any, Protocol
 
@@ -25,7 +25,13 @@ from customer_ops_agent.guardrails import (
 )
 from customer_ops_agent.tools import tool_telemetry_context
 
-from .models import HandlerResult, Route, SpecialistDraft, ToolCallTrace
+from .models import (
+    HandlerResult,
+    HumanApprovalRequest,
+    Route,
+    SpecialistDraft,
+    ToolCallTrace,
+)
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
@@ -33,6 +39,9 @@ load_dotenv(PROJECT_ROOT / ".env", override=False)
 
 MAX_MODEL_ROUNDS = 6
 MAX_TOOL_CALLS = 8
+_CUSTOMER_ACTION_TOOLS = frozenset(
+    {"create_ticket", "grant_retention_offer", "issue_refund"}
+)
 
 _ROUTE_TOOLS: dict[Route, tuple[str, ...]] = {
     "billing": (
@@ -230,6 +239,7 @@ class LLMToolCallingHandler:
         client: OpenAI | None = None,
         model: str | None = None,
         rule_engine: BusinessRuleEngine | None = None,
+        approval_callback: Callable[[HumanApprovalRequest], bool] | None = None,
     ) -> None:
         self._client = client
         self.model = model or os.getenv(
@@ -237,6 +247,7 @@ class LLMToolCallingHandler:
             os.getenv("PLANNER_MODEL", "gpt-4o-mini"),
         )
         self.rule_engine = rule_engine or BusinessRuleEngine()
+        self.approval_callback = approval_callback
         self._circuits = {
             route: CircuitBreaker(name=f"{route}_llm") for route in _ROUTE_TOOLS
         }
@@ -351,6 +362,7 @@ class LLMToolCallingHandler:
         customer_id: str | None,
         limiter: ToolCallLimiter,
         loop_detector: DeadLoopDetector,
+        human_approval_denied: bool = False,
     ) -> tuple[ToolCallTrace, dict[str, Any]]:
         try:
             arguments = json.loads(raw_arguments)
@@ -376,6 +388,14 @@ class LLMToolCallingHandler:
                     reason=payload["error"],
                 ),
                 payload,
+            )
+
+        if name == "escalate_to_human" and human_approval_denied:
+            # The model may repeat the original "approval required" wording
+            # after the trusted callback has already returned No. Normalize the
+            # audit reason so it reflects the authoritative human decision.
+            arguments["reason"] = (
+                "Refund was not issued because human approval was denied."
             )
 
         requested_customer = arguments.get("customer_id")
@@ -427,19 +447,54 @@ class LLMToolCallingHandler:
         with tool_telemetry_context(loop_count=loop.occurrences):
             execution = self.rule_engine.execute_action(name, arguments)
         payload = _privacy_safe(execution.model_dump(mode="json"))
+
+        if (
+            name == "issue_refund"
+            and payload["validation"].get("requires_human_approval")
+            and self.approval_callback is not None
+        ):
+            approval_request = HumanApprovalRequest(
+                customer_id=str(arguments["customer_id"]),
+                amount=float(arguments["amount"]),
+                reason=str(arguments["reason"]),
+            )
+            try:
+                human_approved = self.approval_callback(approval_request)
+            except (EOFError, KeyboardInterrupt):
+                human_approved = False
+
+            if human_approved:
+                with tool_telemetry_context(loop_count=loop.occurrences):
+                    execution = self.rule_engine.execute_action(
+                        name,
+                        arguments,
+                        human_approved=True,
+                    )
+                payload = _privacy_safe(execution.model_dump(mode="json"))
+                payload["human_approval_decision"] = "approved"
+            else:
+                payload["human_approval_decision"] = "denied"
+
         tool_output = payload.get("tool_output") or {}
         status = (
             tool_output.get("status")
             or ("success" if tool_output.get("success") else None)
             or payload["validation"]["status"]
         )
+        approval_denied = payload.get("human_approval_decision") == "denied"
+        if approval_denied:
+            status = "human_approval_denied"
         trace = ToolCallTrace(
             tool=name,
             arguments=arguments,
             executed=execution.executed,
             status=status,
             output=tool_output or None,
-            reason=_tool_reason(payload) or tool_output.get("reason", ""),
+            reason=(
+                "Human approval was denied; the refund was not issued."
+                if approval_denied
+                else _tool_reason(payload) or tool_output.get("reason", "")
+            ),
         )
         return trace, payload
 
@@ -468,12 +523,18 @@ class LLMToolCallingHandler:
                     break
 
                 for tool_call in message.tool_calls:
+                    human_approval_denied = any(
+                        trace.tool == "issue_refund"
+                        and trace.status == "human_approval_denied"
+                        for trace in traces
+                    )
                     trace, payload = self._execute_tool(
                         name=tool_call.function.name,
                         raw_arguments=tool_call.function.arguments,
                         customer_id=state.get("customer_id"),
                         limiter=limiter,
                         loop_detector=loop_detector,
+                        human_approval_denied=human_approval_denied,
                     )
                     traces.append(trace)
                     if trace.tool == "search_kb" and trace.output:
@@ -520,7 +581,8 @@ class LLMToolCallingHandler:
 
         escalation_requested = final_draft.action == "escalate" or any(
             trace.tool == "issue_refund"
-            and trace.status == "requires_human_approval"
+            and trace.status
+            in {"requires_human_approval", "human_approval_denied"}
             for trace in traces
         )
         escalation_executed = any(
@@ -575,16 +637,33 @@ class LLMToolCallingHandler:
             if action == "clarify"
             else "completed"
         )
+        action_confirmed_by_tool = any(
+            trace.executed and trace.tool in _CUSTOMER_ACTION_TOOLS
+            for trace in traces
+        )
+        approval_denied = any(
+            trace.tool == "issue_refund"
+            and trace.status == "human_approval_denied"
+            for trace in traces
+        )
         return HandlerResult(
             handler=route,
             status=status,
-            summary=final_draft.response,
+            summary=(
+                "The refund was not issued because human approval was denied. "
+                "The request was escalated to human support for follow-up."
+                if approval_denied
+                else final_draft.response
+            ),
             confidence=final_draft.confidence,
             action=action,
             citations=citations,
             tool_calls=traces,
             technical_steps=final_draft.technical_steps,
-            policy_based=action == "answer",
+            # A successful write-tool confirmation is grounded by its structured
+            # result. Other answers can contain policy or troubleshooting claims
+            # and therefore still require KB citations.
+            policy_based=action == "answer" and not action_confirmed_by_tool,
         )
 
 

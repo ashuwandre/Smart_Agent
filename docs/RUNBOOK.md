@@ -101,8 +101,19 @@ python scripts/run_agent.py --customer-id CUST0058 --conversation-id retention-d
 Large refund requiring human approval:
 
 ```powershell
-python scripts/run_agent.py --customer-id CUST0094 --conversation-id refund-demo --message "Refund 10000 because I was charged incorrectly."
+python scripts/run_agent.py --interactive-approval --customer-id CUST0094 --conversation-id refund-demo --message "Refund 10000 because I was charged incorrectly."
 ```
+
+When the business-rule engine confirms that approval is required, the CLI
+shows the customer, amount, and reason and asks:
+
+```text
+Approve this refund? [y/N]:
+```
+
+`yes` executes the refund with a trusted approval flag and returns the outcome
+to the specialist loop. `no` leaves the refund unexecuted and records human
+escalation. The LLM cannot supply or bypass this decision.
 
 The JSON output shows:
 
@@ -139,7 +150,7 @@ Do not add runtime memory or `.env` to the submission ZIP.
 
 ### `429 insufficient_quota`
 
-The API key is recognized, but its OpenAI account has no available quota. Add billing/credits or use another funded key. The graph records the failure and returns a safe human-support response.
+The API key is recognized, but its OpenAI account has no available quota. Restore quota for that account or use another API key with available quota. The graph records the failure and returns a safe human-support response.
 
 ### `OPENAI_API_KEY` is missing
 

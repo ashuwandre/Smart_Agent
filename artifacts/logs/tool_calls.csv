@@ -1,1 +1,14 @@
 timestamp,customer,tool,confidence,latency,retry,status,loop_count,reason
+2026-07-22T18:33:31.073637Z,CUST0003,get_customer,,2.12,0,success,1,
+2026-07-22T18:33:36.948464Z,,search_kb,,4164.087,0,success,1,
+2026-07-22T18:40:08.212295Z,CUST0094,get_customer,,3.431,0,success,1,
+2026-07-22T18:40:09.420452Z,CUST0094,issue_refund,,0.238,0,requires_human_approval,0,"Refund above ₹1,000 requires human approval."
+2026-07-22T18:40:10.903300Z,CUST0094,escalate_to_human,,0.047,0,escalated,1,"Refund request of ₹10,000 requires human approval."
+2026-07-22T18:55:47.500673Z,CUST0094,issue_refund,,0.203,0,requires_human_approval,0,"Refund above ₹1,000 requires human approval."
+2026-07-22T18:56:37.453091Z,CUST0094,issue_refund,,2.394,0,issued,1,Customer requested a refund.
+2026-07-22T18:56:54.877337Z,CUST0094,issue_refund,,0.146,0,requires_human_approval,0,"Refund above ₹1,000 requires human approval."
+2026-07-22T18:57:02.468235Z,CUST0094,escalate_to_human,,5.849,0,escalated,1,"Refund request of ₹10,000 requires human approval."
+2026-07-22T19:11:37.206552Z,CUST0094,issue_refund,,1.577,0,requires_human_approval,0,"Refund above ₹1,000 requires human approval."
+2026-07-22T19:11:52.259877Z,CUST0094,issue_refund,,5.19,0,issued,1,Customer requested a refund.
+2026-07-22T19:12:19.270136Z,CUST0094,issue_refund,,0.868,0,requires_human_approval,0,"Refund above ₹1,000 requires human approval."
+2026-07-22T19:12:22.771251Z,CUST0094,escalate_to_human,,7.637,0,escalated,1,"Refund request of ₹10,000 requires human approval."

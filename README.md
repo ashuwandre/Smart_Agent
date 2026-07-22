@@ -42,6 +42,7 @@ tests/                  Unit and integration scenarios
 
 - `docs/RUNBOOK.md` — complete setup and agent/dashboard run instructions.
 - `docs/TEST_SCENARIOS.md` — manual and automated test scenarios.
+- `docs/DEMO_RECORDING_GUIDE.md` — five recording-ready live demonstrations.
 - `docs/stakeholder_summary.pdf` — two-page architecture and stakeholder summary.
 
 Regenerate the PDF after changing its source script:
@@ -114,6 +115,12 @@ For an API-free structure check that executes no customer action:
 python scripts/run_agent.py --offline --customer-id CUST0003 --message "Why is my bill higher this month?"
 ```
 
+To simulate human-in-the-loop approval for a large refund:
+
+```powershell
+python scripts/run_agent.py --interactive-approval --customer-id CUST0094 --message "Request a refund of 10000"
+```
+
 ## Run tests
 
 ```powershell
@@ -147,13 +154,14 @@ The dashboard displays tool timelines, remaining retention budget, circuit-break
 - **Tier 3 — Not claimed:** adversarial tests and observability are useful engineering additions, but no formal evaluation scorecard or productionization deliverable is claimed.
 
 Automated tests use scripted model decisions so they are deterministic and do
-not consume API quota. A funded OpenAI key is required for a live LLM run.
+not consume API quota. Live LLM execution requires an OpenAI key with available
+API quota.
 
 ## Assumptions and limitations
 
 - Customer systems, tickets, refunds, and offers are deterministic local mocks.
 - Conversation memory uses one local JSON file and is intended for a single-process demo.
-- Human approval is represented as a structured pending state; there is no external approval service or UI.
+- Human approval is available through a trusted CLI yes/no callback; there is no external approval service or web approval UI.
 - Specialist confidence is model-reported and is not statistically calibrated.
 - FAISS is built in memory and must be rebuilt when the process restarts.
 - Local CSV/JSON observability is suitable for the assignment, not a distributed production deployment.

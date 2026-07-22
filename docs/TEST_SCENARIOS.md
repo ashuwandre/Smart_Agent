@@ -66,7 +66,10 @@ python -m pytest tests/integration/test_demo_scenarios.py -v
 
 - **Customer:** `CUST0094`
 - **Input:** request refund of 10000.
-- **Expected:** refund is not executed autonomously; status is `requires_human_approval`; a human escalation record is created.
+- **Run:** add `--interactive-approval` to the CLI command.
+- **Expected before decision:** refund is not executed autonomously and status is `requires_human_approval`.
+- **If human enters `yes`:** the trusted approval flag is applied, the refund tool executes, and the specialist continues with the issued result.
+- **If human enters `no`:** the refund remains unexecuted and a human escalation record is created.
 
 ## 10. Circuit breaker
 
