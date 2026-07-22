@@ -43,6 +43,7 @@ tests/                  Unit and integration scenarios
 - `docs/RUNBOOK.md` — complete setup and agent/dashboard run instructions.
 - `docs/TEST_SCENARIOS.md` — manual and automated test scenarios.
 - `docs/DEMO_RECORDING_GUIDE.md` — five recording-ready live demonstrations.
+- `docs/UNDERSTAND_THE_PROJECT.md` — detailed architecture and interview guide.
 - `docs/stakeholder_summary.pdf` — two-page architecture and stakeholder summary.
 
 Regenerate the PDF after changing its source script:
